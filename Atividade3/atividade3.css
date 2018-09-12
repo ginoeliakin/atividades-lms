@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+}
+body{
+    background-image:url(spn2.jpg); 
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+#div1{
+    width:800px;
+    background-color:white;
+}
+
+#diferentao{
+    width: 800px;
+    height: 90px;
+    font-size: 40px;
+    background-image: url("grediente.png");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+a{text-decoration: none;
+    color:black;
+}
+
+h1{
+    font: size 30px; 
+    color: purple
+}
+
+h2{
+    color: purple
+}
+
+
+table{
+    box-align: center;
+
+}
+
+table tr td{
+    border: 2px black solid
+}
+
+video{
+    width: 50vw;
+    height: 63vh;
+}
+
+circle{
+    fill: purple;
+    stroke: black;
+    stroke-width: 1px;
+}
+
+line{
+    fill: none;
+    stroke: black;
+    stroke-width: 1px
+}
+
+.my-class{
+    color: brown    
+}
+
+article section h2{
+    font-size: 19pt;
+}
+
+
+#s1{
+    border: 2px dotted cyan;
+}
+
+#s2{
+    border: 2px ridge magenta;
+}
+
+article{
+    margin: 15px;
+    padding: 15px;
+}
