@@ -115,6 +115,7 @@
     width: 100%;
     display: none;
     box-shadow: 3px 3px 3px rgb(233,233, 233);
+    z-index: 100;
      
 }
 
