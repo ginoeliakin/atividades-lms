@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding: 0;
+}   
+
+.nav-superior{
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    background-color: rgb(10, 177, 163);
+    box-shadow: 3px 3px 3px rgb(100, 100, 100)
+}
+
+.dropdown{
+    float: left;
+}
+
+.dropdown-button{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content{
+    position: absolute;
+    overflow: hidden;
+    max-height: 0;
+    z-index: 100;
+    
+    
+}
+
+.dropdown:hover .dropdown-content{
+    transition: max-height 1s;    
+    max-height: 300px;
+    width: 20%;
+    background: linear-gradient(rgb(37, 206, 192),white );
+}
+ .dropdown-button:hover{
+    background-color: rgb(6, 129, 119);
+     
+ }
+
+ .dropdown-content ul li a{
+     text-decoration: none;
+     color: black;
+     padding: 15px;
+     font-size: 20px;
+     display: block;
+      
+ }
+
+ .dropdown-content ul li:hover{
+     background-color: rgb(6, 129, 119)
+ }
+
+ .menu-lateral ul li a{ 
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px;
+
+ }
+
+ .menu-lateral ul li {
+    list-style-type: none;
+ }
+
+ .menu-lateral{
+     position: absolute;
+     top:50px;
+     background-color:rgb(10, 177, 163);
+     width: 15%;
+     font-size: 20px;
+     text-align: center;
+    box-shadow: 3px 3px 3px rgb(100, 100, 100);
+
+    
+ }
+
+ .menu-lateral ul li:hover{
+    background-color: rgb(6, 129, 119);
+ }
+
+ .texto-lateral{
+    position: absolute;
+    top: 50px;
+    right: 1%;
+    width: 150px;
+    background: linear-gradient(rgb(10,177,163),gray);
+    box-shadow: 3px 3px 3px rgb(100, 100, 100);
+ }
+
+ .container{
+     position: absolute;
+     left: 220px;
+     top: 80px;
+     right: 145px;
+     left: 40%;
+ }
+
+ @media screen and (max-width:600px){
+     .texto-lateral{
+        position: fixed;
+        top: 80%;
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        background: linear-gradient(rgb(10,177,163),gray);
+        box-shadow: 3px 3px 3px rgb(100, 100, 100);
+        z-index: 100;
+     }
+
+     .texto-lateral p{
+        position: absolute; 
+        font-size: 20px;
+         text-align: center;
+         padding: 5px;
+         top: 20%;
+     }
+
+     .menu-lateral{
+        position: absolute;
+        top:50px;
+        left: 5%;
+        background-color:rgb(10, 177, 163);
+        width: 90%;
+        font-size: 15px;
+        text-align: center;
+       box-shadow: 3px 3px 3px rgb(100, 100, 100);  
+     }
+
+     .container{
+        position: absolute;
+        left: 30%;
+        top: 35%;
+        right: 30%;
+        width: 80%;
+     }
+
+    @keyframes pernil-rodando {
+        0%{
+            transform: translate(0px, 0px) rotate(0deg);
+       }
+       
+       25%{transform: translate(25px,50px) rotate(90deg);
+       }
+   
+       50%{transform: translate(50x,12px) rotate(180deg);
+       }
+   
+       75%{transform: translate(32px,0px)rotate(270deg)}
+   
+       100%{transform: translate(0px,0px) rotate(360deg)}
+   
+    }
+
+ }
+
+.container img{
+    width: 100px;
+    height: 100px;
+    animation-name: pernil-rodando;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+ @keyframes pernil-rodando{
+    0%{
+         transform: translate(0px, 0px) rotate(0deg);
+    }
+    
+    25%{transform: translate(50px,100) rotate(90deg);
+    }
+
+    50%{transform: translate(100x,25px) rotate(180deg);
+    }
+
+    75%{transform: translate(75px,0px)rotate(270deg)}
+
+    100%{transform: translate(0px,0px) rotate(360deg)}
+
+ }
