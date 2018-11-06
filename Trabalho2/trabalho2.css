@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.tamanho900{
+    position: relative;
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    
+}
+
+.header{
+    height: 40px;
+    width: 100%;
+    box-shadow: 1px 1px 1px black;
+    background: rgb(212, 137, 23);
+    z-index: 90;
+    
+}
+
+.nome-app{
+
+    font-size: 20px;
+    float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 5px;
+    padding-left: 3%;
+        
+}
+
+.button{
+    position: absolute;
+    right: 5%;
+    top: 10px;
+    z-index: 100;
+}
+
+.grupos li{
+    list-style: none;
+    padding: 5px;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px
+}
+
+.grupos{
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 100%;
+    background: rgba(231, 172, 8, 0.836);
+    display: block;
+    box-shadow: 1px 1px 1px black;
+    z-index: 80;
+
+}
+
+.grupos li:hover{
+    background: rgb(255, 255, 255);
+}
+
+.mensagens{
+    
+    position: absolute;
+    left:30%;    
+    height: 100%;
+    width: 70%;
+    background: rgb(168, 107, 15)
+}
+
+.grupos li img{
+    width: 20px;
+    height: 20px;
+}
+
+.usuario{
+    width: 100px;
+    display: block;
+    padding: 10px;
+    background: rosybrown;
+}
+
+.mensagem{
+    
+    width: 100px;
+    display: block;
+    padding: 10px;
+    background: white;
+    
+}

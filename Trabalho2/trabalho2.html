@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="trabalho2.css">
+</head>
+<body>
+    <div class="conteudo">
+        <div class="tamanho900">
+            <header class="header" >    
+                <h1 class="nome-app">Whatsapp</h1>
+        
+                <div class="button">
+                    <button>Entrar</button>
+                </div>
+            </header>
+
+           <div class="grupos">
+               
+           </div>
+           <div class="mensagens">
+                <div class="mensagem-individual">
+                    <div class="usuario">zé</div>
+                    <div class="mensagem">ooi</div>
+                </div>
+
+                <div class="mensagem-individual">
+                    <div class="usuario">zé</div>
+                    <div class="mensagem">ooi</div>
+                </div>
+
+                <div class="mensagem-individual">
+                    <div class="usuario">zé</div>
+                    <div class="mensagem">ooi</div>
+                </div>
+                
+
+           </div>
+        </div>
+    </div>
+    
+    <script>
+        let grupo = document.querySelector(".grupos");
+
+        function add_grupo(grupoNome, imgGrupo){
+            let li = document.createElement("li");
+            let texto = document.createTextNode(grupoNome);
+            let img = document.createElement("img");
+            img.src= imgGrupo;
+
+            li.appendChild(img);            
+            li.appendChild(texto);
+            grupo.appendChild(li);
+        }
+
+        let mensagens = [
+            {
+                grupo: "Grupo Rolezeiros",
+                mensagens:[
+                    {
+                        usuario: "joao03",
+                        texto: "Tudo bem?"
+                    },
+                    {
+                        usuario: "victor23",
+                        texto: "Tudo tranqs"
+                    },
+                    {
+                        usuario: "joao03",
+                        texto: "Que bom"
+                    },
+                ]
+            },
+            {
+                grupo: "Grupo Academia",
+                mensagens:[
+                    {
+                        usuario: "maria2000",
+                        texto: "Na paz?"
+                    },
+                    {
+                        usuario: "victor23",
+                        texto: "Show"
+                    },
+                    {
+                        usuario: "maria2000",
+                        texto: "Que bom"
+                    },
+                ]
+                
+            },
+            {
+                grupo: "Grupo Familia",
+                mensagens:[
+                    {
+                        usuario: "victor03",
+                        texto: "Bom?"
+                    },
+                    {
+                        usuario: "robson_alves",
+                        texto: "Bom"
+                    },
+                    {
+                        usuario: "victor03",
+                        texto: "Que bom!!"
+                    }
+                ]
+            }
+
+        ]
+
+    function percorrer_grupo(){
+        for(let i = 0; i<mensagens.length; i++){
+            add_grupo(mensagens[i].grupo, "person.png");
+        }
+    }
+        
+        
+        percorrer_grupo();
+    </script>
+
+</body>
+</html>
